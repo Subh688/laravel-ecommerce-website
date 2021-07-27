@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* nav */
+
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+/* category */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(240, 240, 220);
+    justify-content: center;
+}
+
+.flex-container img {
+    width: 80px;
+    height: 80px;
+    margin: 5px 20px;
+}
+
+.category-img {
+    cursor: pointer;
+}
+
+/* home slider */
+.carousel-inner img {
+    width: 100%;
+    height: 50vh;
+}
+
+/*  top sale template   */
+#top-sale .owl-carousel .item .product a {
+    overflow: hidden;
+}
+
+#top-sale .owl-carousel .item .product img {
+    transition: transform 0.5s ease;
+}
+
+#top-sale .owl-carousel .item .product img:hover {
+    transform: scale(1.1);
+}
+
+#top-sale .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+    font-size: 35px;
+    color: #333;
+    padding: 0 1rem;
+}
+
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+    margin-left: -1.9rem;
+    font-weight: bolder;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 12px 10px;
+}
+
+#top-sale .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+    margin-right: -1.9rem;
+    font-weight: bolder;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 12px 10px;
+}
+
+#top-sale {
+    margin: 20px 10px !important;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-img {
+    height: 100px !important;
+    height: 100% !important;
+}
+
+/* login and register */
+.wrapper {
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.wrapper .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+.wrapper form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #4158d0;
+}
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+    top: 0%;
+    font-size: 16px;
+    color: #4158d0;
+    background: #fff;
+    transform: translateY(-50%);
+}
+form .content {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+}
+form .content .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .content input {
+    width: 15px;
+    height: 15px;
+    background: red;
+}
+form .content label {
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+}
+form .content .pass-link {
+    color: "";
+}
+form .field input[type="submit"] {
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+form .signup-link {
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+}
+form .pass-link a,
+form .signup-link a {
+    color: #4158d0;
+    text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover {
+    text-decoration: underline;
+}
